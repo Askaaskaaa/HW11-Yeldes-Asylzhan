@@ -13,6 +13,7 @@
 		550D03082A3B512B00FBA28A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550D03062A3B512B00FBA28A /* Main.storyboard */; };
 		550D030A2A3B512E00FBA28A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550D03092A3B512E00FBA28A /* Assets.xcassets */; };
 		550D030D2A3B512E00FBA28A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550D030B2A3B512E00FBA28A /* LaunchScreen.storyboard */; };
+		550D03162A3B779100FBA28A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 550D03152A3B779100FBA28A /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550D03162A3B779100FBA28A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Yeldes Asylzhan-HW11";
+			packageProductDependencies = (
+				550D03152A3B779100FBA28A /* SnapKit */,
+			);
 			productName = "Yeldes Asylzhan-HW11";
 			productReference = 550D02FD2A3B512B00FBA28A /* Yeldes Asylzhan-HW11.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 550D02F42A3B512B00FBA28A;
+			packageReferences = (
+				550D03142A3B779100FBA28A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 550D02FE2A3B512B00FBA28A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		550D03142A3B779100FBA28A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		550D03152A3B779100FBA28A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550D03142A3B779100FBA28A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 550D02F52A3B512B00FBA28A /* Project object */;
 }
